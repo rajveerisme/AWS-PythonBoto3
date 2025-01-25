@@ -10,7 +10,7 @@ after the zip file is created
 aws lambda create-function \
 --function-name MyFirstLambda \
 --runtime python3.9 \
---role (use the arn provied in your roles when you create a role)
+--role (use the arn provied in your roles when you create a role) \
 --handler simple_lambda_function.lambda_handler \
 --zip-file "fileb://function.zip"
 
