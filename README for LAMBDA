@@ -3,6 +3,7 @@ for creating lambda function
 
 first you need to download and save the simple_lambda_function.py file from here 
 then you need to zip the file using the command
+
 zip function.zip simple_lambda_function.py
 
 after the zip file is created 
