@@ -29,5 +29,6 @@ python python list_ec2_instances.py
 so this will display all the ec2 instances in the given format
 Instance ID: , Instance Type: , Public IP: , State: 
 
+all the files in this repository must be downloaded and stored in your pc with .py extension, and you need to use the same directories here.
 
 Thank You For Visiting this repository
