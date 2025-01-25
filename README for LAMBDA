@@ -1,1 +1,34 @@
+for creating lambda function 
 
+
+first you need to download and save the simple_lambda_function.py file from here 
+then you need to zip the file using the command
+zip function.zip simple_lambda_function.py
+
+after the zip file is created 
+
+aws lambda create-function \
+--function-name MyFirstLambda \
+--runtime python3.9 \
+--role (use the arn provied in your roles when you create a role)
+--handler simple_lambda_function.lambda_handler \
+--zip-file "fileb://function.zip"
+
+this code creates a lambda function, associates it with an iam role and deploys it
+
+then you need to invoke the lambda function using
+
+aws lambda invoke \
+    --function-name MyFirstLambda \
+    output.json
+
+this will execute the lambda function and store the output in a json file 
+we can view the jason file using 
+
+cat output.json
+
+after this you can clean up using 
+
+aws lambda delete-function --function-name MyFirstLambda
+
+Thank you for visiting this repository
